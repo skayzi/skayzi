@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Produk</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">Luxor Furniture</div>
+
+      <nav>
+        <a href="index.html"> Home </a>
+
+        <a href="cart.html"> 🛒 Cart </a>
+      </nav>
+    </header>
+
+    <section class="produk">
+      <h2>Semua Produk</h2>
+
+      <div class="card">
+        <div class="product">
+          <img
+            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc"
+          />
+
+          <h3>Sofa Modern</h3>
+
+          <p>5000000</p>
+
+          <button onclick="addCart('Sofa Modern', 5000000)">Tambah Cart</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="https://images.unsplash.com/photo-1592078615290-033ee584e267"
+          />
+
+          <h3>Kursi Premium</h3>
+
+          <p>2500000</p>
+
+          <button onclick="addCart('Kursi Premium', 2500000)">
+            Tambah Cart
+          </button>
+        </div>
+
+        <div class="product">
+          <img
+            src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b"
+          />
+
+          <h3>Meja Kayu</h3>
+
+          <p>3000000</p>
+
+          <button onclick="addCart('Meja Kayu', 3000000)">Tambah Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

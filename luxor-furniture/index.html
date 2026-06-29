@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Luxor Furniture</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">Luxor Furniture</div>
+
+      <nav>
+        <a href="index.html"> Home </a>
+
+        <a href="cart.html"> 🛒 Keranjang </a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Furniture Elegan Untuk Rumah Impian</h1>
+
+        <p>Desain modern dengan material premium</p>
+
+        <a href="#produk">
+          <button>Lihat Produk</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>Kategori Furniture</h2>
+
+      <p class="sub">Pilih furniture sesuai kebutuhan ruangan Anda</p>
+
+      <div class="category-box">
+        <div class="category-card">
+          <img
+            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc"
+          />
+
+          <h3>Sofa</h3>
+
+          <p>Ruang tamu elegan</p>
+        </div>
+
+        <div class="category-card">
+          <img
+            src="https://images.unsplash.com/photo-1592078615290-033ee584e267"
+          />
+
+          <h3>Kursi</h3>
+
+          <p>Nyaman dan modern</p>
+        </div>
+
+        <div class="category-card">
+          <img
+            src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b"
+          />
+
+          <h3>Meja</h3>
+
+          <p>Kayu berkualitas</p>
+        </div>
+
+        <div class="category-card">
+          <img
+            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace"
+          />
+
+          <h3>Lemari</h3>
+
+          <p>Penyimpanan minimalis</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="produk" id="produk">
+      <h2>Produk Unggulan</h2>
+
+      <p class="sub">Koleksi furniture premium Luxor</p>
+
+      <div class="card">
+        <div class="product">
+          <img
+            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc"
+          />
+
+          <h3>Sofa Modern</h3>
+
+          <p>Rp 5.000.000</p>
+
+          <button onclick="addCart('Sofa Modern', 5000000)">
+            Tambah Keranjang
+          </button>
+
+          <a href="detail.html?produk=sofa"> Detail </a>
+        </div>
+
+        <div class="product">
+          <img
+            src="https://images.unsplash.com/photo-1592078615290-033ee584e267"
+          />
+
+          <h3>Kursi Premium</h3>
+
+          <p>Rp 2.500.000</p>
+
+          <button onclick="addCart('Kursi Premium', 2500000)">
+            Tambah Keranjang
+          </button>
+
+          <a href="detail.html?produk=kursi"> Detail </a>
+        </div>
+
+        <div class="product">
+          <img
+            src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b"
+          />
+
+          <h3>Meja Kayu Natural</h3>
+
+          <p>Rp 3.000.000</p>
+
+          <button onclick="addCart('Meja Kayu Natural', 3000000)">
+            Tambah Keranjang
+          </button>
+
+          <a href="detail.html?produk=meja"> Detail </a>
+        </div>
+
+        <div class="product">
+          <img
+            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace"
+          />
+
+          <h3>Lemari Minimalis</h3>
+
+          <p>Rp 4.500.000</p>
+
+          <button onclick="addCart('Lemari Minimalis', 4500000)">
+            Tambah Keranjang
+          </button>
+
+          <a href="detail.html?produk=lemari"> Detail </a>
+        </div>
+
+        <div class="product">
+          <img
+            src="https://images.unsplash.com/photo-1618220179428-22790b461013"
+          />
+
+          <h3>Set Ruang Tamu</h3>
+
+          <p>Rp 8.000.000</p>
+
+          <button onclick="addCart('Set Ruang Tamu', 8000000)">
+            Tambah Keranjang
+          </button>
+
+          <a href="detail.html?produk=set"> Detail </a>
+        </div>
+
+        <div class="product">
+          <img
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0"
+          />
+
+          <h3>Rak Modern</h3>
+
+          <p>Rp 2.000.000</p>
+
+          <button onclick="addCart('Rak Modern', 2000000)">
+            Tambah Keranjang
+          </button>
+
+          <a href="detail.html?produk=rak"> Detail </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Pesan Furniture</h2>
+
+      <p>Hubungi Luxor Furniture</p>
+
+      <a href="https://wa.me/6281234567890" target="_blank">
+        <button>WhatsApp</button>
+      </a>
+    </section>
+
+    <footer>
+      <h3>Luxor Furniture</h3>
+
+      <p>Premium Furniture Studio © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
