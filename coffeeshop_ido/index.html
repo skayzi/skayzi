@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Tetangga - Kopi Susu Kesukaan Kita</title>
+    <meta name="description"
+        content="Kopi Tetangga menghadirkan sajian kopi yang ramah, hangat, dan selalu menjadi teman setia Anda setiap hari.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Kopi<span>Tetangga</span></a>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-links">
+                <a href="#beranda" class="nav-link">Beranda</a>
+                <a href="#cerita" class="nav-link">Cerita Kami</a>
+                <a href="#menu" class="nav-link">Menu Pilihan</a>
+                <a href="#lokasi" class="nav-link">Lokasi</a>
+                <a href="#menu" class="btn btn-primary">Pesan Sekarang</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-bg">
+            <img src="assets/images/hero_bg.png" alt="Suasana hangat Kopi Tetangga">
+        </div>
+        <div class="hero-content container">
+            <h1>Halo, Tetangga!</h1>
+            <p>Secangkir semangat untuk mengawali hari Anda. Kami hadir dengan kopi susu gula aren yang diracik sepenuh
+                hati.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-outline">Lihat Menu</a>
+                <a href="#menu" class="btn btn-primary">Pesan Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="cerita" class="about section-padding">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>Lebih Dari Sekadar Kedai Kopi</h2>
+                <p>Kopi Tetangga lahir dari keinginan sederhana: menyediakan kopi yang enak, terjangkau, dan ramah bagi
+                    siapa saja. Kami percaya bahwa kopi bukan sekadar minuman, melainkan sarana untuk mempererat
+                    silaturahmi antar tetangga.</p>
+                <p>Dari biji kopi pilihan hingga senyuman para barista kami, semuanya disiapkan agar Anda merasa seperti
+                    di rumah sendiri.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/images/shop_exterior.png" alt="Eksterior Kopi Tetangga">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Menu Pilihan Tetangga</h2>
+                <p>Favorit sepanjang masa untuk menemani harimu.</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Menu Item 1 -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <img src="assets/images/iced_coffee.png" alt="Kopi Susu Tetangga">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Kopi Susu</h3>
+                        <p>Kopi, susu segar, dan gula aren asli. Manisnya pas, kopinya nendang.</p>
+                        <span class="price">Rp 20.000</span>
+                        <button class="btn btn-primary btn-sm btn-pesan" data-item="Kopi Susu" data-price="20000">Pesan</button>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <div class="placeholder-img bg-black-coffee">☕</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Americano</h3>
+                        <p>Ekstrak espresso murni dengan air. Untuk kamu yang butuh fokus ekstra.</p>
+                        <span class="price">Rp 18.000</span>
+                        <button class="btn btn-primary btn-sm btn-pesan" data-item="Americano" data-price="18000">Pesan</button>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <div class="placeholder-img bg-chocolate">🍫</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Hot Coklat</h3>
+                        <p>Cokelat premium yang creamy. Pilihan tepat bagi yang sedang tidak ingin kopi.</p>
+                        <span class="price">Rp 22.000</span>
+                        <button class="btn btn-primary btn-sm btn-pesan" data-item="Hot Coklat" data-price="22000">Pesan</button>
+                    </div>
+                </div>
+
+                <!-- Menu Item 4 -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <div class="placeholder-img bg-snack">🥐</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Donat</h3>
+                        <p>Donat tabur gula halus yang empuk, teman sejati kopi susumu.</p>
+                        <span class="price">Rp 8.000</span>
+                        <button class="btn btn-primary btn-sm btn-pesan" data-item="Donat" data-price="8000">Pesan</button>
+                    </div>
+                </div>
+
+                <!-- Menu Item 5 -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <div class="placeholder-img bg-matcha" style="background-color: #D3E4CD;">🍵</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Matcha Latte</h3>
+                        <p>Bubuk matcha premium berpadu dengan susu segar pilihan.</p>
+                        <span class="price">Rp 24.000</span>
+                        <button class="btn btn-primary btn-sm btn-pesan" data-item="Matcha Latte" data-price="24000">Pesan</button>
+                    </div>
+                </div>
+
+                <!-- Menu Item 6 -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <div class="placeholder-img bg-espresso" style="background-color: #3C2A21; color: white;">☕</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Espresso</h3>
+                        <p>Suntikan energi cepat dan padat. 100% Arabica pilihan.</p>
+                        <span class="price">Rp 15.000</span>
+                        <button class="btn btn-primary btn-sm btn-pesan" data-item="Espresso" data-price="15000">Pesan</button>
+                    </div>
+                </div>
+
+                <!-- Menu Item 7 -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <div class="placeholder-img bg-toast" style="background-color: #F9F3DF;">🍞</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Roti Bakar</h3>
+                        <p>Roti bakar hangat dengan pilihan selai coklat atau keju.</p>
+                        <span class="price">Rp 15.000</span>
+                        <button class="btn btn-primary btn-sm btn-pesan" data-item="Roti Bakar" data-price="15000">Pesan</button>
+                    </div>
+                </div>
+
+                <!-- Menu Item 8 -->
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <div class="placeholder-img bg-fries" style="background-color: #F8CB2E;">🍟</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Kentang Goreng</h3>
+                        <p>Renyah di luar, lembut di dalam. Cocok untuk nongkrong.</p>
+                        <span class="price">Rp 18.000</span>
+                        <button class="btn btn-primary btn-sm btn-pesan" data-item="Kentang Goreng" data-price="18000">Pesan</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Modal -->
+            <div id="orderModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Pesan <span id="modalItemName"></span></h2>
+                    <form id="orderForm">
+                        <input type="hidden" id="itemPrice" value="0">
+                        <div class="form-group">
+                            <label for="orderName">Nama Pemesan</label>
+                            <input type="text" id="orderName" required placeholder="Masukkan nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="orderQty">Jumlah</label>
+                            <input type="number" id="orderQty" min="1" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderNotes">Catatan (Opsional)</label>
+                            <textarea id="orderNotes" rows="2" placeholder="Contoh: Esnya dikit aja"></textarea>
+                        </div>
+                        <div class="modal-total">
+                            Total: <strong id="modalTotal">Rp 0</strong>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim Pesanan (WhatsApp)</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="lokasi" class="location section-padding">
+        <div class="container location-container">
+            <div class="location-info">
+                <h2>Mampir ke Rumah Kami</h2>
+                <p>Kami buka setiap hari untuk menyambut Anda.</p>
+                <ul class="contact-details">
+                    <li><strong>Alamat:</strong> Jl. Cipete Raya No. 10, Jakarta Selatan</li>
+                    <li><strong>Jam Buka:</strong> 07:00 - 22:00 WIB</li>
+                    <li><strong>WhatsApp:</strong> 0812-3456-7890</li>
+                </ul>
+            </div>
+            <div class="location-map">
+                <!-- Decorative map placeholder -->
+                <div class="map-placeholder">
+                    <span>Peta Lokasi Kedai</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Kopi<span>Tetangga</span></h3>
+                <p>Teman cerita sehari-hari.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://tiktok.com" target="_blank">TikTok</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Kopi Tetangga. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
