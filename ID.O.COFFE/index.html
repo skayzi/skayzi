@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID.O.COFFE | Kopi dengan Senyuman ☕✨</title>
+    <meta name="description" content="ID.O.COFFE – Nikmati kopi terbaik dengan nuansa kartun yang fun & friendly. Pesan sekarang!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+            <span class="emoji">☕</span> ID.O.COFFE
+        </div>
+        <nav class="desktop-nav">
+            <a href="#home" data-i18n="nav_home">Beranda</a>
+            <a href="#menu" data-i18n="nav_menu">Menu</a>
+            <a href="#about" data-i18n="nav_about">Tentang</a>
+            <a href="#contact" data-i18n="nav_contact">Kontak</a>
+        </nav>
+        <div class="header-actions">
+            <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language">🇮🇩 ID</button>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">🌙</button>
+            <button id="cart-btn" class="icon-btn cart-btn">
+                🛒 <span id="cart-count" class="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Floating Mobile Nav -->
+    <nav class="mobile-nav">
+        <a href="#home">🏠</a>
+        <a href="#menu">☕</a>
+        <a href="#about">📖</a>
+        <a href="#contact">📍</a>
+    </nav>
+
+    <!-- Home Section (Hero) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge" data-i18n="hero_badge">Selamat datang di kafe paling lucu! ✨</div>
+            <h1 class="bounce-in">ID.O.COFFE</h1>
+            <p class="slogan" data-i18n="hero_slogan">Kopi dengan Senyuman ☕✨</p>
+            <p class="description" data-i18n="hero_desc">Mulai harimu dengan secangkir kebahagiaan yang sempurna. Diseduh segar, khusus untukmu!</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary" data-i18n="btn_order">Pesan Sekarang 🚀</a>
+                <a href="#menu" class="btn btn-secondary" data-i18n="btn_menu">Lihat Menu 👀</a>
+            </div>
+        </div>
+        <div class="hero-image" id="hero-parallax-container">
+            <div class="speech-bubble" id="speech-bubble" data-i18n="speech_bubble">Halo! ☕</div>
+            <img 
+                src="https://api.dicebear.com/7.x/notionists/svg?seed=barista&backgroundColor=ffffff" 
+                alt="Kartun Barista" 
+                id="hero-img" 
+                class="animate-character"
+            >
+            <!-- Floating deco elements -->
+            <div class="deco deco-1" id="deco-bean">🫘</div>
+            <div class="deco deco-2" id="deco-star">⭐</div>
+            <div class="deco deco-3" id="deco-cup">☕</div>
+        </div>
+    </section>
+
+    <!-- Marquee Banner (Tuku style) -->
+    <div class="marquee-wrapper">
+        <div class="marquee-track">
+            <span>☕ Kopi Segar &nbsp;·&nbsp; 🍩 Snack Enak &nbsp;·&nbsp; ✨ Dibuat dengan Cinta &nbsp;·&nbsp; 🫘 Biji Pilihan &nbsp;·&nbsp; 🧊 Es Kopi Nikmat &nbsp;·&nbsp; 🍵 Non Kopi Tersedia &nbsp;·&nbsp;</span>
+            <span>☕ Kopi Segar &nbsp;·&nbsp; 🍩 Snack Enak &nbsp;·&nbsp; ✨ Dibuat dengan Cinta &nbsp;·&nbsp; 🫘 Biji Pilihan &nbsp;·&nbsp; 🧊 Es Kopi Nikmat &nbsp;·&nbsp; 🍵 Non Kopi Tersedia &nbsp;·&nbsp;</span>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="section-header">
+            <h2 data-i18n="menu_title">Menu Kami 📋</h2>
+            <p data-i18n="menu_subtitle">Pilih favoritmu hari ini! 🍩✨</p>
+        </div>
+
+        <!-- Menu Categories -->
+        <div class="menu-categories">
+            <button class="category-btn active" data-filter="all" data-i18n="cat_all">Semua</button>
+            <button class="category-btn" data-filter="hot-coffee" data-i18n="cat_hot">Kopi Panas ☕</button>
+            <button class="category-btn" data-filter="ice-coffee" data-i18n="cat_ice">Kopi Dingin 🧊</button>
+            <button class="category-btn" data-filter="non-coffee" data-i18n="cat_non">Non Kopi 🍵</button>
+            <button class="category-btn" data-filter="snack" data-i18n="cat_snack">Camilan 🥐</button>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menu-container">
+            <!-- Menu items injected by JavaScript -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-card">
+            <div class="about-image bounce-float">
+                <img src="https://api.dicebear.com/7.x/notionists/svg?seed=shop&backgroundColor=ffffff" alt="Toko Kopi Kartun" id="about-img">
+            </div>
+            <div class="about-content">
+                <h2 data-i18n="about_title">Cerita Kami 📖</h2>
+                <p data-i18n="about_p1">Selamat datang di <strong>ID.O.COFFE</strong>! Kami percaya bahwa secangkir kopi yang enak bukan hanya soal rasa, tapi juga tentang senyuman yang menyertai. 💛</p>
+                <p data-i18n="about_p2">Bermula dari sudut kecil yang hangat, kafe kartun kami dirancang untuk menyebarkan kebahagiaan, satu cangkir setiap saat. Dari barista ceria hingga biji kopi yang dipilih dengan cermat, semua dibuat dengan cinta. ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2 data-i18n="contact_title">Kunjungi Kami! 📍</h2>
+            <p data-i18n="contact_subtitle">Kami senang melihatmu tersenyum! 😊</p>
+        </div>
+        
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="icon">🏠</div>
+                <h3 data-i18n="contact_loc_title">Lokasi</h3>
+                <p data-i18n="contact_loc_text">Jl. Kebahagiaan No. 123,<br>Kota Ceria</p>
+            </div>
+            <div class="contact-card">
+                <div class="icon">⏰</div>
+                <h3 data-i18n="contact_hours_title">Jam Buka</h3>
+                <p data-i18n="contact_hours_text">Senin – Jumat: 08:00 – 22:00<br>Sabtu – Minggu: 09:00 – 23:00</p>
+            </div>
+            <div class="contact-card">
+                <div class="icon">📱</div>
+                <h3 data-i18n="contact_follow_title">Ikuti Kami</h3>
+                <div class="social-links">
+                    <a href="#" class="social-btn">Instagram 📸</a>
+                    <a href="#" class="social-btn">TikTok 🎵</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-i18n="footer_text">© 2026 ID.O.COFFE. Dibuat dengan 💛 dan ☕.</p>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-i18n="cart_title">Keranjang Kamu 🛒</h2>
+                <button id="close-modal" class="icon-btn">❌</button>
+            </div>
+            <div class="cart-items" id="cart-items-container">
+                <p class="empty-cart-msg" data-i18n="cart_empty">Keranjangmu kosong. Yuk tambah kopi dulu! ☕</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span data-i18n="cart_total">Total:</span>
+                    <span id="cart-total-price">Rp 0</span>
+                </div>
+                <div class="cart-actions">
+                    <button id="clear-cart-btn" class="btn btn-secondary" data-i18n="btn_clear">Kosongkan 🗑️</button>
+                    <button id="checkout-btn" class="btn btn-primary" data-i18n="btn_checkout">Checkout 🛍️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal-overlay">
+        <div class="modal-content checkout-modal-content">
+            <div class="modal-header">
+                <h2 data-i18n="checkout_title">Form Pesanan 📝</h2>
+                <button id="close-checkout" class="icon-btn">❌</button>
+            </div>
+
+            <!-- Order Summary inside checkout -->
+            <div class="checkout-summary" id="checkout-summary">
+                <!-- Injected by JS -->
+            </div>
+
+            <div class="checkout-divider"></div>
+
+            <!-- Form -->
+            <form id="checkout-form" class="checkout-form" novalidate>
+                <div class="form-group">
+                    <label for="co-name" data-i18n="form_name">Nama Lengkap</label>
+                    <input type="text" id="co-name" placeholder="Nama kamu..." required>
+                    <span class="form-error" id="err-name"></span>
+                </div>
+                <div class="form-group">
+                    <label for="co-phone" data-i18n="form_phone">Nomor HP</label>
+                    <input type="tel" id="co-phone" placeholder="08xxxxxxxxxx" required>
+                    <span class="form-error" id="err-phone"></span>
+                </div>
+                <div class="form-group">
+                    <label for="co-type" data-i18n="form_type">Tipe Pesanan</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="order-type" value="dine-in" checked>
+                            <span data-i18n="form_dinein">Makan di Tempat 🪑</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="order-type" value="takeaway">
+                            <span data-i18n="form_takeaway">Bawa Pulang 🛍️</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="co-payment" data-i18n="form_payment">Metode Pembayaran</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="payment" value="cash" checked>
+                            <span data-i18n="form_cash">Tunai 💵</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="payment" value="transfer">
+                            <span data-i18n="form_transfer">Transfer Bank 🏦</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="payment" value="qris">
+                            <span data-i18n="form_qris">QRIS 📱</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="co-note" data-i18n="form_note">Catatan (opsional)</label>
+                    <textarea id="co-note" rows="2" placeholder="Contoh: gula sedikit, less ice..."></textarea>
+                </div>
+
+                <div class="checkout-total-bar">
+                    <span data-i18n="cart_total">Total:</span>
+                    <span id="checkout-total-price" class="co-total-num">Rp 0</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;margin-top:6px;" data-i18n="btn_place_order">Buat Pesanan ✅</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content success-modal-content">
+            <div class="success-anim">✅</div>
+            <h2 data-i18n="success_title">Pesanan Berhasil!</h2>
+            <p id="success-msg" data-i18n="success_msg">Terima kasih! Pesananmu sudah kami terima. Silakan menunggu.</p>
+            <div class="success-order-id" id="success-order-id"></div>
+            <button id="close-success" class="btn btn-primary" style="margin-top:20px;" data-i18n="btn_back">Kembali ke Menu 🏠</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
